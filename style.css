@@ -1,0 +1,260 @@
+body{
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0e1322;
+  color: #e9eefc;
+}
+
+.container{
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 16px;
+  background: #151c2f;
+  border: 1px solid #2a3350;
+  border-radius: 12px;
+}
+
+.logo{
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.logo span{
+  color: #ff7aa2;
+}
+
+.menu a{
+  margin-left: 12px;
+  color: #cfd7f5;
+  text-decoration: none;
+}
+
+.menu a:hover{
+  text-decoration: underline;
+}
+
+.menu .active{
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.block{
+  margin-top: 18px;
+  padding: 16px;
+  background: #151c2f;
+  border: 1px solid #2a3350;
+  border-radius: 12px;
+}
+
+.text{
+  color: #cfd7f5;
+  line-height: 1.6;
+}
+
+.buttons{
+  margin: 12px 0 10px;
+}
+
+.btn{
+  display: inline-block;
+  padding: 10px 14px;
+  background: #ff7aa2;
+  color: #0e1322;
+  text-decoration: none;
+  border-radius: 10px;
+  margin-right: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover{
+  opacity: 0.9;
+}
+
+.btn2{
+  background: transparent;
+  color: #ff7aa2;
+  border: 1px solid #ff7aa2;
+}
+
+.list{
+  margin: 10px 0 0;
+  line-height: 1.7;
+}
+
+.imgBox{
+  margin-top: 14px;
+}
+
+.imgBox img{
+  width: 100%;
+  max-width: 700px;
+  border-radius: 10px;
+  border: 1px solid #2a3350;
+}
+
+.small{
+  margin-top: 8px;
+  font-size: 13px;
+  color: #aeb8da;
+}
+
+/* карточки на главной */
+.cards{
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.card{
+  flex: 1;
+  padding: 12px;
+  background: #10172a;
+  border: 1px solid #2a3350;
+  border-radius: 12px;
+}
+
+/* блок заметки на about */
+.note{
+  margin-top: 14px;
+  padding: 12px;
+  background: #10172a;
+  border: 1px solid #2a3350;
+  border-radius: 12px;
+}
+
+/* аккордеон на care */
+.acc{
+  margin-top: 12px;
+}
+
+.accBtn{
+  width: 100%;
+  text-align: left;
+  padding: 10px 12px;
+  margin-top: 10px;
+  background: #10172a;
+  color: #e9eefc;
+  border: 1px solid #2a3350;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.accContent{
+  display: none;
+  padding: 10px 12px;
+  background: #0e1528;
+  border: 1px solid #2a3350;
+  border-radius: 10px;
+  margin-top: 8px;
+}
+
+/* галерея */
+.gallery{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.photo{
+  width: calc(33.333% - 8px);
+  background: #10172a;
+  border: 1px solid #2a3350;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.photo img{
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.caption{
+  padding: 10px;
+  color: #aeb8da;
+  font-size: 14px;
+}
+
+/* контакты + форма */
+.contactsBox{
+  margin-top: 10px;
+  padding: 10px 12px;
+  background: #10172a;
+  border: 1px solid #2a3350;
+  border-radius: 12px;
+}
+
+.form{
+  margin-top: 14px;
+  padding: 12px;
+  background: #10172a;
+  border: 1px solid #2a3350;
+  border-radius: 12px;
+}
+
+.field{
+  display: block;
+  margin-top: 10px;
+}
+
+input, textarea{
+  width: 100%;
+  margin-top: 6px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #2a3350;
+  background: #0e1528;
+  color: #e9eefc;
+}
+
+/* футер */
+.footer{
+  margin-top: 18px;
+  padding: 12px 4px;
+  display: flex;
+  justify-content: space-between;
+  color: #aeb8da;
+}
+
+.footer a{
+  color: #aeb8da;
+  text-decoration: none;
+}
+
+.footer a:hover{
+  text-decoration: underline;
+}
+
+/* адаптив */
+@media (max-width: 700px){
+  .header{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .menu a{
+    margin-left: 0;
+    margin-right: 10px;
+    display: inline-block;
+    margin-bottom: 6px;
+  }
+
+  .cards{
+    flex-direction: column;
+  }
+
+  .photo{
+    width: 100%;
+  }
+}

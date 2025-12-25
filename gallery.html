@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Галерея — Аня и котики</title>
+  <meta name="description" content="Галерея котиков: несколько карточек с изображениями и подписями.">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="logo">anya <span>cats</span></div>
+
+      <nav class="menu">
+        <a href="index.html">Главная</a>
+        <a href="about.html">Обо мне</a>
+        <a href="care.html">Уход</a>
+        <a class="active" href="gallery.html">Галерея</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="block">
+        <h1>Галерея котиков</h1>
+
+        <div class="gallery">
+          <div class="photo">
+            <img src="images/cat1.jpg" alt="Серый кот смотрит в камеру"
+                 onerror="this.src='https://placehold.co/420x260?text=cat1';">
+            <div class="caption">Серый философ</div>
+          </div>
+
+          <div class="photo">
+            <img src="images/cat2.jpg" alt="Рыжий кот лежит на подоконнике"
+                 onerror="this.src='https://placehold.co/420x260?text=cat2';">
+            <div class="caption">Рыжик на окне</div>
+          </div>
+
+          <div class="photo">
+            <img src="images/cat3.jpg" alt="Черный кот на темном фоне"
+                 onerror="this.src='https://placehold.co/420x260?text=cat3';">
+            <div class="caption">Ночь и кот</div>
+          </div>
+
+          <div class="photo">
+            <img src="images/cat4.jpg" alt="Кот играет с игрушкой"
+                 onerror="this.src='https://placehold.co/420x260?text=cat4';">
+            <div class="caption">Охота на игрушку</div>
+          </div>
+
+          <div class="photo">
+            <img src="images/cat5.jpg" alt="Кот спит клубком"
+                 onerror="this.src='https://placehold.co/420x260?text=cat5';">
+            <div class="caption">Спящий комочек</div>
+          </div>
+
+          <div class="photo">
+            <img src="images/cat6.jpg" alt="Полосатый кот у миски"
+                 onerror="this.src='https://placehold.co/420x260?text=cat6';">
+            <div class="caption">Время обеда</div>
+          </div>
+        </div>
+   
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>© 2025 Аня</div>
+      <a href="index.html">На главную</a>
+    </footer>
+  </div>
+</body>
+</html>
